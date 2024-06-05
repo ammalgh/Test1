@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sing Up</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     
+    <h2>تسجيل جديد</h2>
+    <div id="first">
+       
+        <input id="name" type="text" placeholder="ادخل الاسم ">
+        <input id="email" type="email" placeholder="ادخل الايميل ">
+        <input id="password" type="password" placeholder="ادخل الرقم السري">
+   
+
+    <div>
+        <button id="btn" type="button">تسجيل جديد</button>
+        <p>لديك حساب<a href="Login.html">تسجيل دخول  </a></p>
+        <div id="massege"></div>
+    </div>
+</div>
+
+
+
+
+
+    <script>
+
+      document.getElementById('btn').addEventListener('click',() => {
+        let name =document.getElementById('name');
+        let email =document.getElementById('email');
+        let password =document.getElementById('password');
+        let massege =document.getElementById('massege');
+
+        let namevalid= /^([a-zA-Z]{4,})$/;
+        let emailvalid =/^([a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})$/;
+        let passwordvalid= /^(?=^.{5,}$)((?=.*\d)$/
+
+        if(name.value == ""  || email.value =="" || password.value == ""){
+          massege.innerText="يجب ان تدخل معلوماتك"
+       }else if(!name.value.match(namevalid)){
+           massege.innerText="الاسم يجب ان يكون اكثر من ثلاث  احرف"
+       }else if(!email.value.match(emailvalid)){
+            massege.innerText="الايميل يجب ان يحتوي @" 
+        }else if(!password.value.match(passwordvalid)){
+           massege.innerText="يجب ان يكون اكثر من 5 ارقام"
+       }else (fetch('https://6657373e9f970b3b36c869ed.mockapi.io/Data', {
+            method: 'POST',
+            body: JSON.stringify({
+            name: name.value,
+            email: email.value,
+             password: password.value,
+ }),
+        headers: {
+              'Content-type': 'application/json; charset=UTF-8',
+     }
+        }))
+
+  .then((response) => response.json())
+  .then((json) =>( window.location.href="Login.html"))
+
+      });
+
+
+ </script>
+</body>
+</html>

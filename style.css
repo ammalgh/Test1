@@ -1,0 +1,146 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    body{
+        margin: 0;
+        /* background-color:rgb(176, 176, 218) ; */
+    }
+    
+    
+    #name{
+        margin: 0;
+        margin-left: 20em;
+        margin-top: 6px;
+    }
+    
+    #email{
+        margin: 0;
+        margin-left: 20em; 
+        margin-top: 6px;
+    }
+    
+    #password{
+        margin: 0;
+        margin-left: 20em; 
+        margin-top: 6px;  
+    }
+    h2{
+        margin: 0;
+        margin-left: 12em; 
+        margin-top: 10em;
+        gap: 5px;
+    
+    }
+    
+    
+    #btn{
+        margin: 0;
+        margin-left: 20em; 
+        margin-top: 6px; 
+        background-color: #ffafcc;
+    }
+    
+    
+    #massege{
+        margin: 0;
+        margin-left: 20em;  
+    }
+    
+    p{
+        margin: 0;
+        margin-left: 17em;   
+    }
+    
+    #first{
+        background-color: rgb(176, 176, 218);
+        margin: 0;
+        margin-left: auto;
+        margin-right: auto; 
+      
+       
+    }
+    
+    .text{
+        margin-left: 20px;
+        margin-top: 30px;
+        border: 2px; 
+    }
+    
+    
+    .bg-light {
+        background-color:rgb(176, 176, 218) !important ;
+    }
+}
+
+
+
+/*  */
+body{
+    margin: 0;
+    /* background-color:rgb(176, 176, 218) ; */
+}
+
+
+#name{
+    margin: 0;
+    margin-left: 20em;
+    margin-top: 6px;
+}
+
+#email{
+    margin: 0;
+    margin-left: 20em; 
+    margin-top: 6px;
+}
+
+#password{
+    margin: 0;
+    margin-left: 20em; 
+    margin-top: 6px;  
+}
+h2{
+    margin: 0;
+    margin-left: 12em; 
+    margin-top: 10em;
+    gap: 5px;
+
+}
+
+
+#btn{
+    margin: 0;
+    margin-left: 20em; 
+    margin-top: 6px; 
+    background-color: #ee588f;
+    border-radius: 5px;
+}
+
+
+#massege{
+    margin: 0;
+    margin-left: 20em;  
+}
+
+p{
+    margin: 0;
+    margin-left: 17em;   
+}
+
+#first{
+    background-color: rgb(176, 176, 218);
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto; 
+  
+   
+}
+
+.text{
+    margin-left: 20px;
+    margin-top: 30px;
+    border: 2px; 
+}
+
+
+.bg-light {
+    background-color:rgb(176, 176, 218) !important ;
+}
